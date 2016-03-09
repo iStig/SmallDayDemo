@@ -8,7 +8,7 @@ target 'SmallDayDemo' do
 pod 'SVProgressHUD', '~> 1.1'
 pod 'MJRefresh', '~> 3.1'
 pod 'AMapSearch', '~> 3.3'
-pod 'AMapSearch', '~> 3.3'
+pod 'AMap2DMap', '~> 3.3'
 pod 'UMengAnalytics-NO-IDFA', '~> 3.6'
 pod 'SDWebImage', '~> 3.7'
 pod 'UMengSocial', '~> 4.3'

@@ -31,9 +31,9 @@
 		626EC2421C8FCA2200571467 /* ClassifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC2411C8FCA2200571467 /* ClassifyViewController.swift */; };
 		626EC2441C8FCA4300571467 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC2431C8FCA4300571467 /* MeViewController.swift */; };
 		626EC2461C8FCE3D00571467 /* UIColor+sdColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC2451C8FCE3D00571467 /* UIColor+sdColor.swift */; };
-		626EC2661C8FFBE400571467 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 626EC2651C8FFBE400571467 /* RegExCategories.m */; };
 		626EC2681C90012B00571467 /* glass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 626EC2671C90012B00571467 /* glass.wav */; };
 		626EC26C1C9007CB00571467 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC26B1C9007CB00571467 /* UserInfoManager.swift */; };
+		626EC2781C9019CA00571467 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 626EC2771C9019CA00571467 /* RegExCategories.m */; };
 		D9C544849E3F3C1F12DC8C23 /* Pods_SmallDayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE2B64AFF6602633F6B6D91 /* Pods_SmallDayDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,11 +65,11 @@
 		626EC2411C8FCA2200571467 /* ClassifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyViewController.swift; sourceTree = "<group>"; };
 		626EC2431C8FCA4300571467 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		626EC2451C8FCE3D00571467 /* UIColor+sdColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+sdColor.swift"; sourceTree = "<group>"; };
-		626EC2601C8FFBD400571467 /* SmallDayDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmallDayDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		626EC2641C8FFBE400571467 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
-		626EC2651C8FFBE400571467 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		626EC2671C90012B00571467 /* glass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = glass.wav; sourceTree = "<group>"; };
 		626EC26B1C9007CB00571467 /* UserInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
+		626EC2721C9019A500571467 /* SmallDayDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmallDayDemo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		626EC2761C9019CA00571467 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
+		626EC2771C9019CA00571467 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		B6EF97E96F3E6CAFA5376DBE /* Pods-SmallDayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallDayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmallDayDemo/Pods-SmallDayDemo.release.xcconfig"; sourceTree = "<group>"; };
 		CDE2B64AFF6602633F6B6D91 /* Pods_SmallDayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmallDayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,12 +142,12 @@
 		624C65651C1B1E0600263C20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				626EC2721C9019A500571467 /* SmallDayDemo-Bridging-Header.h */,
 				626EC2671C90012B00571467 /* glass.wav */,
 				626EC23D1C8FC65400571467 /* AppDelegate.swift */,
 				624C65591C1AFADD00263C20 /* LaunchScreen.storyboard */,
 				624C655C1C1AFADD00263C20 /* Info.plist */,
 				624C65571C1AFADD00263C20 /* Assets.xcassets */,
-				626EC2601C8FFBD400571467 /* SmallDayDemo-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -237,8 +237,8 @@
 		626EC2281C8FC42B00571467 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				626EC2641C8FFBE400571467 /* RegExCategories.h */,
-				626EC2651C8FFBE400571467 /* RegExCategories.m */,
+				626EC2761C9019CA00571467 /* RegExCategories.h */,
+				626EC2771C9019CA00571467 /* RegExCategories.m */,
 				626EC2451C8FCE3D00571467 /* UIColor+sdColor.swift */,
 			);
 			path = Extension;
@@ -417,9 +417,9 @@
 				626EC2421C8FCA2200571467 /* ClassifyViewController.swift in Sources */,
 				626EC23C1C8FC42B00571467 /* theme.swift in Sources */,
 				626EC2401C8FC94400571467 /* ExperienceViewController.swift in Sources */,
+				626EC2781C9019CA00571467 /* RegExCategories.m in Sources */,
 				626EC2461C8FCE3D00571467 /* UIColor+sdColor.swift in Sources */,
 				626EC2391C8FC42B00571467 /* MainNavigationController.swift in Sources */,
-				626EC2661C8FFBE400571467 /* RegExCategories.m in Sources */,
 				626EC2361C8FC42B00571467 /* DoubleTextView.swift in Sources */,
 				626EC23A1C8FC42B00571467 /* MainTabBarController.swift in Sources */,
 				626EC2381C8FC42B00571467 /* LeadpageViewController.swift in Sources */,
@@ -528,11 +528,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SmallDayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easytrip.SmallDayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SmallDayDemo/SmallDayDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmallDayDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -543,11 +544,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = SmallDayDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.easytrip.SmallDayDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "SmallDayDemo/SmallDayDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SmallDayDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};

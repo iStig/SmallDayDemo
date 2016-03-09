@@ -3,15 +3,20 @@
 //
 
 
-#import <SDWebImage/UIImageView+WebCache.h>
+//#import "MobClick.h" //暂时没用
+
+//无法用bridge导入 原因未知
+//#import <MJRefresh>
+//#import <SDWebImage/UIImageView+WebCache.h>
+
 #import <CommonCrypto/CommonCrypto.h>
 #import <SVProgressHUD/SVProgressHUD.h>
-#import <MJRefresh.h>
 #import "RegExCategories.h"
 #import <AMapSearchKit/AMapSearchKit.h>
 
-//#import "MobClick.h"
 #import "UMSocial.h"
 #import "UMSocialSinaHandler.h"
 #import "UMSocialWechatHandler.h"
 
+@import MJRefresh;
+@import SDWebImage;

@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import SDWebImage
+//import SDWebImage
+//import MJRefresh
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
