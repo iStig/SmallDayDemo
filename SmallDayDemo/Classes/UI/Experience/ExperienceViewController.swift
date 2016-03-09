@@ -1,5 +1,5 @@
 //
-//  MainTabBarController.swift
+//  ExperienceViewController.swift
 //  SmallDayDemo
 //
 //  Created by iStig on 16/3/9.
@@ -8,16 +8,14 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
+class ExperienceViewController: MainViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      setUpAllChildViewController()
+
         // Do any additional setup after loading the view.
     }
-     private func setUpAllChildViewController() {
-     
-  }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

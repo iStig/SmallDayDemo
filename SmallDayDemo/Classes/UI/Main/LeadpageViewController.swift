@@ -17,23 +17,23 @@ class LeadpageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      var imagePath:String!
+      var leadPageImage:UIImage!
       
-      switch AppWidth {
-      case 375: imagePath = NSBundle.mainBundle().pathForResource("fourpage-375w-667h@2x.jpg", ofType:nil)
-      case 414: imagePath = NSBundle.mainBundle().pathForResource("fourpage-414w-736h@3x.jpg", ofType:nil)
-      case 568: imagePath = NSBundle.mainBundle().pathForResource("fourpage-568h@2x.jpg", ofType:nil)
-      default:  imagePath = NSBundle.mainBundle().pathForResource("fourpage@2x.jpg", ofType:nil)
+      switch AppHeight {
+      case 736: leadPageImage = UIImage(named: "fourpage-414w-736h")
+      case 667: leadPageImage = UIImage(named: "fourpage-375w-667h")
+      case 568: leadPageImage = UIImage(named: "fourpage-320w-568h")
+      default:  leadPageImage = UIImage(named: "fourpage-320w-480h")
       }
       
-      backgroundImage.image = UIImage(contentsOfFile:imagePath)
+      backgroundImage.image = leadPageImage
       view.addSubview(backgroundImage)
       
-      startButton.setBackgroundImage(UIImage(named:"into_home"), forState:.Normal)
+      startButton.setBackgroundImage(UIImage(named:"into_home"), forState:UIControlState.Normal)
       startButton.setTitle("开始小日子", forState: UIControlState.Normal)
       startButton.setTitleColor(UIColor.whiteColor(), forState:.Normal)
       startButton.frame = CGRect(x: (AppWidth - 210) * 0.5, y: AppHeight - 120, width: 210, height: 45)
-      startButton.addTarget(self, action: Selector("showMainTabbar"), forControlEvents:.TouchUpInside)
+      startButton.addTarget(self, action: Selector("showMainTabbar"), forControlEvents:UIControlEvents.TouchUpInside)
       view.addSubview(startButton)
         // Do any additional setup after loading the view.
     }
