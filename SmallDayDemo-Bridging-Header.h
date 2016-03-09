@@ -6,7 +6,7 @@
 //#import "MobClick.h" //暂时没用
 
 //无法用bridge导入 原因未知
-//#import <MJRefresh>
+//#import <MJRefresh/MJRefresh.h>
 //#import <SDWebImage/UIImageView+WebCache.h>
 
 #import <CommonCrypto/CommonCrypto.h>
