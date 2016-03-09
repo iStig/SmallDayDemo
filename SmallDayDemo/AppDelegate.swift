@@ -13,21 +13,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
     setupKeyWindow()
+    
+    NSNotificationCenter.defaultCenter().addObserver(self,
+      selector:Selector("showMianViewController"),
+      name: SD_ShowMainTabbarController_Notification,
+      object: nil)
     return true
   }
   
-  private func setupKeyWindow() {
+  //MARK: - Private
+  private func setupKeyWindow() {//设置根视图控制器
     window = UIWindow(frame:MainBounds)
-    window?.rootViewController = rootController()
+    window?.rootViewController =  showLeadpage()
     window?.makeKeyAndVisible()
   }
-
-  private func rootController() -> UIViewController {
-    return MainTableViewController()
+  
+  private func showLeadpage() -> UIViewController{
+    let versionString = "CFBundleShortVersionString"
+    let currentVersion = NSBundle.mainBundle().infoDictionary![versionString] as! String;
+    let preVersion = (NSUserDefaults.standardUserDefaults().objectForKey(versionString) as? String) ?? "";//注意??用法
+    //currentVersion与preVersion相比是否是降序,即preVersioncurrentVersion比currentVersion版本小,在OC中要尤其注意判断是否为空
+    //true情况
+    //currentVersion = "1.1"  preVersion = "1.0"
+    //false情况
+    //currentVersion = "1.1"  preVersion = "1.3"
+    if currentVersion.compare(preVersion) == NSComparisonResult.OrderedDescending {
+      NSUserDefaults.standardUserDefaults().setObject(currentVersion, forKey: versionString)
+      NSUserDefaults.standardUserDefaults().synchronize()
+      return LeadpageViewController()
+    }
+    return MainTabBarController()
+  }
+  
+  private func showMianViewController () {//当新版本第一次先进引导页再进MainTabBarController并且展示城市选择页
+    let mainTabBarVC = MainTabBarController()
+    self.window!.rootViewController = mainTabBarVC
+    let nav = mainTabBarVC.viewControllers![0] as? MainNavigationController
+    let mainVC = nav?.viewControllers[0] as! MainViewController
+    mainVC.pushCityView()
   }
   
   func applicationWillResignActive(application: UIApplication) {

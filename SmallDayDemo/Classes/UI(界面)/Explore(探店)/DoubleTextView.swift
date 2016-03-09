@@ -19,3 +19,14 @@ class DoubleTextView: UIView {
     */
 
 }
+
+
+//没有高亮状态的按钮
+class NoHighlightButton:UIButton {
+  //重写sethighlighted方法 无论怎么设置都是不显示highlighted状态
+  override var highlighted: Bool {
+    didSet{
+      super.highlighted = false
+    }
+  }
+}

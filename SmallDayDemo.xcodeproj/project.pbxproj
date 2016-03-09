@@ -10,9 +10,17 @@
 		624C65511C1AFADD00263C20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C65501C1AFADD00263C20 /* AppDelegate.swift */; };
 		624C65581C1AFADD00263C20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624C65571C1AFADD00263C20 /* Assets.xcassets */; };
 		624C655B1C1AFADD00263C20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624C65591C1AFADD00263C20 /* LaunchScreen.storyboard */; };
-		624C65691C1B222500263C20 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C65681C1B222500263C20 /* MainTableViewController.swift */; };
 		624C656B1C1B316B00263C20 /* LeadpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C656A1C1B316B00263C20 /* LeadpageViewController.swift */; };
 		624C656E1C1B332A00263C20 /* theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C656D1C1B332A00263C20 /* theme.swift */; };
+		626EC1F11C8F16A200571467 /* DoubleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC1F01C8F16A200571467 /* DoubleTextView.swift */; };
+		626EC1F71C8F17FE00571467 /* fourpage-375w-667h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 626EC1F31C8F17FE00571467 /* fourpage-375w-667h@2x.jpg */; };
+		626EC1F81C8F17FE00571467 /* fourpage-414w-736h@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 626EC1F41C8F17FE00571467 /* fourpage-414w-736h@3x.jpg */; };
+		626EC1F91C8F17FE00571467 /* fourpage-568h@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 626EC1F51C8F17FE00571467 /* fourpage-568h@2x.jpg */; };
+		626EC1FA1C8F17FE00571467 /* fourpage@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 626EC1F61C8F17FE00571467 /* fourpage@2x.jpg */; };
+		626EC1FE1C8FB96800571467 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC1FD1C8FB96800571467 /* MainTabBarController.swift */; };
+		626EC2001C8FB9E900571467 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC1FF1C8FB9E900571467 /* MainNavigationController.swift */; };
+		626EC2021C8FBAB800571467 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC2011C8FBAB700571467 /* MainViewController.swift */; };
+		626EC2041C8FBECB00571467 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626EC2031C8FBECB00571467 /* ExploreViewController.swift */; };
 		883EABC9FC353B664033BAE7 /* libPods-SmallDayDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 118392375B28316B1D55EAD6 /* libPods-SmallDayDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -24,9 +32,17 @@
 		624C65571C1AFADD00263C20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624C655A1C1AFADD00263C20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624C655C1C1AFADD00263C20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		624C65681C1B222500263C20 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		624C656A1C1B316B00263C20 /* LeadpageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadpageViewController.swift; sourceTree = "<group>"; };
 		624C656D1C1B332A00263C20 /* theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = theme.swift; sourceTree = "<group>"; };
+		626EC1F01C8F16A200571467 /* DoubleTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleTextView.swift; sourceTree = "<group>"; };
+		626EC1F31C8F17FE00571467 /* fourpage-375w-667h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage-375w-667h@2x.jpg"; sourceTree = "<group>"; };
+		626EC1F41C8F17FE00571467 /* fourpage-414w-736h@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage-414w-736h@3x.jpg"; sourceTree = "<group>"; };
+		626EC1F51C8F17FE00571467 /* fourpage-568h@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage-568h@2x.jpg"; sourceTree = "<group>"; };
+		626EC1F61C8F17FE00571467 /* fourpage@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fourpage@2x.jpg"; sourceTree = "<group>"; };
+		626EC1FD1C8FB96800571467 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		626EC1FF1C8FB9E900571467 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		626EC2011C8FBAB700571467 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		626EC2031C8FBECB00571467 /* ExploreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		B6EF97E96F3E6CAFA5376DBE /* Pods-SmallDayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmallDayDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmallDayDemo/Pods-SmallDayDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +106,7 @@
 		624C65631C1B1D7000263C20 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				626EC1F21C8F17FE00571467 /* imageFile */,
 				624C65501C1AFADD00263C20 /* AppDelegate.swift */,
 				624C65661C1B220600263C20 /* UI(界面) */,
 			);
@@ -116,6 +133,7 @@
 		624C65661C1B220600263C20 /* UI(界面) */ = {
 			isa = PBXGroup;
 			children = (
+				626EC1EF1C8F167400571467 /* Explore(探店) */,
 				624C656C1C1B32A500263C20 /* Other(其他) */,
 				624C65671C1B220600263C20 /* Main(公共) */,
 			);
@@ -125,7 +143,9 @@
 		624C65671C1B220600263C20 /* Main(公共) */ = {
 			isa = PBXGroup;
 			children = (
-				624C65681C1B222500263C20 /* MainTableViewController.swift */,
+				626EC1FD1C8FB96800571467 /* MainTabBarController.swift */,
+				626EC1FF1C8FB9E900571467 /* MainNavigationController.swift */,
+				626EC2011C8FBAB700571467 /* MainViewController.swift */,
 				624C656A1C1B316B00263C20 /* LeadpageViewController.swift */,
 			);
 			path = "Main(公共)";
@@ -137,6 +157,26 @@
 				624C656D1C1B332A00263C20 /* theme.swift */,
 			);
 			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		626EC1EF1C8F167400571467 /* Explore(探店) */ = {
+			isa = PBXGroup;
+			children = (
+				626EC1F01C8F16A200571467 /* DoubleTextView.swift */,
+				626EC2031C8FBECB00571467 /* ExploreViewController.swift */,
+			);
+			path = "Explore(探店)";
+			sourceTree = "<group>";
+		};
+		626EC1F21C8F17FE00571467 /* imageFile */ = {
+			isa = PBXGroup;
+			children = (
+				626EC1F31C8F17FE00571467 /* fourpage-375w-667h@2x.jpg */,
+				626EC1F41C8F17FE00571467 /* fourpage-414w-736h@3x.jpg */,
+				626EC1F51C8F17FE00571467 /* fourpage-568h@2x.jpg */,
+				626EC1F61C8F17FE00571467 /* fourpage@2x.jpg */,
+			);
+			path = imageFile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				624C655B1C1AFADD00263C20 /* LaunchScreen.storyboard in Resources */,
+				626EC1FA1C8F17FE00571467 /* fourpage@2x.jpg in Resources */,
 				624C65581C1AFADD00263C20 /* Assets.xcassets in Resources */,
+				626EC1F81C8F17FE00571467 /* fourpage-414w-736h@3x.jpg in Resources */,
+				626EC1F71C8F17FE00571467 /* fourpage-375w-667h@2x.jpg in Resources */,
+				626EC1F91C8F17FE00571467 /* fourpage-568h@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				626EC2021C8FBAB800571467 /* MainViewController.swift in Sources */,
+				626EC2001C8FB9E900571467 /* MainNavigationController.swift in Sources */,
 				624C656B1C1B316B00263C20 /* LeadpageViewController.swift in Sources */,
 				624C656E1C1B332A00263C20 /* theme.swift in Sources */,
-				624C65691C1B222500263C20 /* MainTableViewController.swift in Sources */,
+				626EC2041C8FBECB00571467 /* ExploreViewController.swift in Sources */,
+				626EC1FE1C8FB96800571467 /* MainTabBarController.swift in Sources */,
+				626EC1F11C8F16A200571467 /* DoubleTextView.swift in Sources */,
 				624C65511C1AFADD00263C20 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
